@@ -1,0 +1,130 @@
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Super Memo</title>
+	
+<style>
+	#myVideo {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		min-width: 100%; 
+		min-height: 100%;
+		z-index: -1;
+	}
+	#plansza {
+	        width:560px;
+			height: 450px;
+			position: fixed;
+			background-image: url("img/flagrussia.png");
+			background-size: cover;
+			color: #f1f1f1;
+			z-index: 0;
+			left: 434px;
+			top: 200px;
+			
+}
+	h1 {
+			position: fixed;
+			z-index: 1;
+			left: 350px;
+			top: 15px;
+			font-size: 75px;
+			animation-name: color;
+			animation-duration:3s;
+			animation-iteration-count:infinite;
+	}
+	
+	@keyframes color {
+		0% { color: white; }
+		25% { color: blue; }
+		50% { color: red; }
+		75% { color: blue; }
+		100% { color: white; }
+	}
+	
+	#gifsovietdog img {
+			width:10%;
+			float:right;
+}
+	
+	#gifsovietdog1 img {
+			width: 10%;
+}
+	
+	#gifbrasildog img {
+			width: 10%;
+			bottom: 40px;
+			right: 0px;
+			position: fixed;
+		
+}
+	
+	#gifbrasildog1 img {
+			width:10%;
+			bottom: 40px;
+			float: left;
+			position: fixed;
+}
+
+
+	.kafelek {
+	    width: 100px;
+		height: 100px;
+		background: #aaaaff;
+		background-image: url("img/russianhardbass.jpg");
+		background-size: cover;
+		margin-left: 10px;
+		margin-top: 10px;
+		float: left;
+		font-size: 70px;
+		font-family: Arial;
+		
+		box-sizing: border-box;
+		text-align: center;
+    }
+	
+	.kafelek img {
+		width: 100px;
+		height: 100px;
+		background-size: cover;
+	}
+
+
+</style>
+<script type="text/javascript" src="supermemo.js"></script>
+</head>
+<body>
+<div id="text">
+<span><h1> RUSSIA HARD BASS <h1></span>
+
+</div>
+
+
+<div id="gifsovietdog">
+	<img src="img/sovietdog.gif">
+</div>
+<div id="gifsovietdog1">
+	<img src="img/sovietdog.gif">
+</div>
+<div id="gifbrasildog">
+	<img src="img/brasildogdance.gif">
+</div>
+<div id="gifbrasildog1">
+	<img src="img/brasildogdance.gif">
+</div>
+
+
+<video id="myVideo" controls autoplay loop >
+  <source id = "mp4.src" src="img/Russiahardbass1.mp4" type="video/mp4">
+</video>
+
+
+<body onload="generuj()">
+    <div id="plansza">
+	
+
+
+</div> 
+</body>
+</html>
